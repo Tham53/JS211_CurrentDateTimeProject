@@ -14,15 +14,25 @@ const displayDate = () => {
 }
 
 // Write a JavaScript program to convert a number to a string.
-
+function myFunction() {
+  var num = 15;
+  var n = num.toString();
+  document.getElementById("demo").innerHTML = n;
+}
 
 
 // Write a JavaScript program to convert a string to the number.
-let a = "10000";
-let b = "12abc95";
-let c = "115.12";
+// function convertStoI() { 
+//   var a = "100"; 
+//   var b = parseInt(a); 
+//   document.write("Integer value is" + b); 
+//   var d = parseInt("3 11 43"); 
+//   document.write("</br>"); 
 
-parseInt(a) + 523
+//   document.write('Integer value is ' + d); 
+
+// } 
+// convertStoI();  
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
   // * Null
@@ -71,7 +81,13 @@ add (2,4);
 
 
 // Write a JavaScript program that runs when both things are not true.  
-
+function testNum(a) {
+  if (a > 0) {
+    return "positive";
+  } else {
+    return "NOT positive";
+  }
+}
 // ***************************
 //         PART TWO
 // ***************************
