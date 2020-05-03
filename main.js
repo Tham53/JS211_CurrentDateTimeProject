@@ -12,16 +12,17 @@ const displayDate = () => {
 
   document.getElementById("display-element").innerHTML = currentDate;
 }
- 
 
 // Write a JavaScript program to convert a number to a string.
 
 
 
 // Write a JavaScript program to convert a string to the number.
+let a = "10000";
+let b = "12abc95";
+let c = "115.12";
 
-
-
+parseInt(a) + 523
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
   // * Null
@@ -29,11 +30,36 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
+  const dataType = () => {
+    const data = document.getElementById("dataEntry").value;
+    if (data ==="null") {
+      document.getElementById("display-type").innerHTML = "null";
+    }
+    else if (data === "true") {
+      document.getElementById("display-type").innerHTML = "boolean";
+    }
+    else if (data === "false") {
+      document.getElementById("display-type").innerHTML = "boolean";
+    }
+    else if (data === "") {
+      document.getElementById("display-type").innerHTML = "undefined";
+    }
+    else if (data <= "Number.MAX_VALUE") {
+      document.getElementById("display-type").innerHTML = "number";
+    }
+    else {
+      document.getElementById("display-type").innerHTML = "NaN";
+    }
+  }
 
+  
   
 // Write a JavaScript program that adds 2 numbers together.
+const add = (num1, num2) =>{
+  return num1 +num2;
+}
 
+add (2,4);
 
 
 // Write a JavaScript program that runs only when 2 things are true.
