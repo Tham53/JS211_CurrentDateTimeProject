@@ -17,12 +17,27 @@ function myFunction() {
   document.getElementById("demo").innerHTML = n;
 }
 </script>
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">Click Me</button>
+<div id="display-element"></div>
+<p id="demo"></p>
+
+<script>
+console.log(new Date)
+
+const displayDate = () => {
+  const currentDate = new Date()
+
+  document.getElementById("display-element").innerHTML = currentDate;
+}
+</script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <!-- <h1>Hello World!</h1>
     <hr/>
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    <hr/> -->
   </body>
 </html>
